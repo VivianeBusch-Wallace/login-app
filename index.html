@@ -10,9 +10,36 @@
   <body>
     <form action="index.js" method="GET" id="login">
       <fieldset id="main">
-        <div id="social-media"></div>
+        <div id="social-media">
+          <button type="button" class="social-media-buttons" id="facebook">
+            icon + Facebook login
+          </button>
+          <button type="button" class="social-media-buttons" id="google">
+            icon + Google+login
+          </button>
+          <button type="button" class="social-media-buttons" id="twitter">
+            icon + Twitter login
+          </button>
+        </div>
         <div id="divider"></div>
-        <div id="sign-in"></div>
+        <div id="sign-in">
+          <label>Sign in with</label>
+          <input
+            type="text"
+            name="username-or-email"
+            id="username-or-email"
+            placeholder="Username or email"
+          />
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <input type="checkbox" name="remember-me" id="remember-me" />
+          <label for="checkbox">Remember me</label>
+          <button>Login</button>
+        </div>
       </fieldset>
       <fieldset>
         <a href="#">Register now</a>
