@@ -1,0 +1,22 @@
+* {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+form {
+  position: absolute;
+  margin: 25vh 25vw;
+}
+fieldset {
+  border: lightgray 1px solid;
+}
+#main {
+  background-color: moccasin;
+  display: inline;
+}
+#social-media,
+#or-divider,
+#sign-in {
+  border: 1px green solid;
+}
+#sign-in-options {
+  background-color: rgb(228, 236, 247);
+}
