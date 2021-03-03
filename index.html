@@ -6,30 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login App</title>
     <link rel="stylesheet" href="./css/stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="./css/fontawesome-free-5.15.2-web/css/all.css"
+    />
   </head>
   <body>
     <form action="index.js" method="GET" id="login">
       <fieldset id="main">
         <div id="social-media">
           <button type="button" class="social-media-buttons" id="facebook">
-            icon + Facebook login
+            <i class="fab fa-facebook-f"></i>
+            Facebook login
           </button>
           <button type="button" class="social-media-buttons" id="google">
-            icon + Google+login
+            <i class="fab fa-google-plus-g"></i>
+            Google+login
           </button>
           <button type="button" class="social-media-buttons" id="twitter">
-            icon + Twitter login
+            <i class="fab fa-twitter"></i>
+            Twitter login
           </button>
         </div>
         <div id="or-divider"></div>
+        <div id="or">OR</div>
         <div id="sign-in">
           <label>Sign in with</label>
+          <i class="fas fa-user"></i>
           <input
             type="text"
             name="username-or-email"
             id="username-or-email"
             placeholder="Username or email"
           />
+          <i class="fas fa-unlock-alt"></i>
           <input
             type="text"
             name="password"

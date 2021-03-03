@@ -1,6 +1,7 @@
 * {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
+/* form general*/
 form {
   position: absolute;
   margin: 25vh 25vw;
@@ -10,13 +11,38 @@ fieldset {
 }
 #main {
   background-color: moccasin;
-  display: inline;
+  display: inline-block;
 }
 #social-media,
 #or-divider,
 #sign-in {
   border: 1px green solid;
+  height: 10em;
+}
+/* individual outer parts */
+#social-media {
+  width: 49%;
+}
+#or-divider {
+  width: 1%;
+}
+#or {
+  height: 3em;
+  width: 3em;
+  border: lightgray 1px solid;
+  border-radius: 50%;
+  z-index: 1;
+}
+#sign-in {
+  width: 49%;
 }
 #sign-in-options {
   background-color: rgb(228, 236, 247);
+  color: blue;
+}
+
+/* social media buttons */
+#social-media button {
+  height: 2rem;
+  width: 10rem;
 }
