@@ -53,10 +53,28 @@ button {
 #sign-in {
   width: 15rem;
 }
-/* underneath input */
+#sign-in + div {
+  height: 1em;
+  width: 10em;
+  border: yellow solid 1px;
+  background-color: teal;
+  text-align: center;
+}
+/* why does this not work? */
+
+/* underneath input of sign in*/
 #login-button {
   background-color: steelblue;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5em 1.3em;
 }
+
+input[type="checkbox"] {
+  border: red solid 1px;
+  border-radius: none;
+}
+/* why does this not work? */
 
 /* social media buttons */
 #social-media button {
