@@ -19,10 +19,21 @@ fieldset {
   border: 1px green solid;
   height: 10em;
 }
+a {
+  text-decoration: none;
+}
+
 /* individual outer parts */
+
+/* social media links */
 #social-media {
   width: 49%;
 }
+button a {
+  color: white;
+}
+
+/* divider */
 #or-divider {
   width: 1%;
 }
@@ -33,6 +44,8 @@ fieldset {
   border-radius: 50%;
   z-index: 1;
 }
+
+/* sign in form */
 #sign-in {
   width: 49%;
 }
@@ -45,4 +58,17 @@ fieldset {
 #social-media button {
   height: 2rem;
   width: 10rem;
+  border: none;
+  margin: 1em;
+  color: white;
+}
+
+#facebook {
+  background-color: rgb(77, 77, 245);
+}
+#google {
+  background-color: rgb(255, 0, 64);
+}
+#twitter {
+  background-color: cyan;
 }
