@@ -4,27 +4,29 @@
 /* form general*/
 form {
   position: absolute;
-  margin: 25vh 25vw;
+  margin: 10rem;
 }
 fieldset {
   border: lightgray 1px solid;
 }
 #main {
-  background-color: moccasin;
-  display: inline-flex;
+  width: 70vw;
+  /* display: inline-flex; */
 }
 #social-media,
 #or-divider,
+#or,
 #sign-in {
   border: 1px green solid;
   height: 10em;
+  display: inline-block;
 }
 
 /* individual outer parts */
 
 /* social media links */
 #social-media {
-  width: 49%;
+  width: 15rem;
   height: auto;
 }
 button {
@@ -43,15 +45,13 @@ button {
   border: lightgray 1px solid;
   border-radius: 50%;
   z-index: 2;
+  color: lightgray;
+  text-align: center;
 }
 
 /* sign in form */
 #sign-in {
-  width: 49%;
-}
-#sign-in-options {
-  background-color: rgb(228, 236, 247);
-  color: blue;
+  width: 15rem;
 }
 /* underneath input */
 #login-button {
@@ -74,4 +74,18 @@ button {
 }
 #twitter {
   background-color: rgb(0, 234, 255);
+}
+
+/* bottom of form */
+#sign-in-options {
+  background-color: rgb(228, 236, 247);
+}
+#sign-in-options a {
+  color: rgb(0, 132, 255);
+  text-decoration: none;
+  display: inline;
+}
+#border {
+  border-left: lightgray solid 1px;
+  height: 1em;
 }
