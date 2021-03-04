@@ -73,10 +73,17 @@ button {
   text-align: center;
 }
 
-/* sign in form */
+/* sign in form part*/
 #sign-in-container {
-  /* height: auto;
-  width: 30%; */
+  height: auto;
+  width: 30%;
+  padding: 2em;
+}
+form {
+  background-color: mediumspringgreen;
+}
+#remember-me-login-box {
+  background-color: mediumaquamarine;
 }
 
 /* underneath input of sign in*/
