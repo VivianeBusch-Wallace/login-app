@@ -4,57 +4,41 @@
 /* general*/
 #body-container {
   margin: 30vh 20vw;
-}
-fieldset {
   border: lightgray 1px solid;
-}
-
-/* outer boxes */
-#main {
-}
-#social-media,
-#or,
-#sign-in {
-  border: 1px green solid;
-}
-#sign-in-options {
-  background-color: rgb(228, 236, 247);
-}
-
-/* social media links */
-#social-media {
-  width: auto;
-  height: auto;
 }
 button {
   color: white;
   border: none;
 }
 
-/* divider */
+/* outer boxes */
+/* #big-box {
 
-/* sign in form */
+} */
 
-/* underneath input of sign in*/
-#login-button {
-  background-color: steelblue;
-  border-radius: 3px;
-  text-transform: uppercase;
-  padding: 0.5em 1.3em;
+#social-media-container,
+#or-divider,
+#sign-in-container {
+  border: 1px green solid;
+}
+#bottom-box {
+  border: lightgray 1px solid;
+  /* display: flex;
+  align-items: center; */
 }
 
-input[type="checkbox"] {
-}
-/* why does this not work? */
-
+/* social media links */
 /* social media buttons */
+#social-media-container {
+  width: auto;
+  height: auto;
+}
 #social-media button {
   height: 2rem;
   width: 10rem;
   margin: 1em;
   color: white;
 }
-
 #facebook {
   background-color: rgb(77, 77, 245);
 }
@@ -64,6 +48,31 @@ input[type="checkbox"] {
 #twitter {
   background-color: rgb(0, 234, 255);
 }
+
+/* divider */
+#or-divider {
+  color: lightgray;
+  border: lightgray 1px solid;
+  border-radius: 30px;
+  text-align: center;
+}
+
+/* sign in form */
+#sign-in-container {
+  height: auto;
+  width: 40%;
+}
+
+/* underneath input of sign in*/
+#login-button {
+  background-color: steelblue;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5em 1.3em;
+}
+input[type="checkbox"] {
+}
+/* why does this not work? */
 
 /* bottom part inside */
 #links a {
