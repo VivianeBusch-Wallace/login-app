@@ -1,28 +1,35 @@
 * {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
-/* form general*/
-form {
-  position: absolute;
-  margin: 10rem;
+/* general*/
+#body-container {
+  /* display: flexbox; */
+  margin: 30vh 20vw;
 }
 fieldset {
   border: lightgray 1px solid;
 }
+
+/* outer boxes */
 #main {
-  width: 70vw;
-  /* display: inline-flex; */
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
 }
 #social-media,
-#or-divider,
 #or,
 #sign-in {
   border: 1px green solid;
   height: 10em;
   display: inline-block;
 }
-
-/* individual outer parts */
+#sign-in-options {
+  background-color: rgb(228, 236, 247);
+  width: 50vw;
+  display: inline-flex;
+  justify-content: center;
+}
 
 /* social media links */
 #social-media {
@@ -35,10 +42,6 @@ button {
 }
 
 /* divider */
-#or-divider {
-  width: 1%;
-  z-index: 1;
-}
 #or {
   height: 3em;
   width: 3em;
@@ -47,6 +50,12 @@ button {
   z-index: 2;
   color: lightgray;
   text-align: center;
+}
+
+#or::before {
+  height: 50px;
+  width: 5px;
+  border: blue 1px solid;
 }
 
 /* sign in form */
@@ -94,10 +103,8 @@ input[type="checkbox"] {
   background-color: rgb(0, 234, 255);
 }
 
-/* bottom of form */
-#sign-in-options {
-  background-color: rgb(228, 236, 247);
-}
+/* bottom part inside */
+
 #sign-in-options a {
   color: rgb(0, 132, 255);
   text-decoration: none;
