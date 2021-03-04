@@ -13,17 +13,24 @@
   </head>
   <body>
     <div id="body-container">
-      <div class="outside">
+      <div class="big-box">
         <div id="social-media"></div>
-        <div id="or-divider"></div>
-        <form action="index.js" method="GET" id="sign-in">
-          <div id="sign-in-with">Sign in with</div>
-          <div id="username-box">
-            <input type="text" name="username" id="input-username" />
-          </div>
-          <div id="password-box">
-            <input type="password" name="password" id="input-password" />
-          </div>
+
+        <div id="or-divider">
+          <p>OR</p>
+        </div>
+
+        <div id="sign-in-container">
+          <form action="index.js" method="GET" id="sign-in-form">
+            <div id="sign-in-with">Sign in with</div>
+            <div id="username-box">
+              <input type="text" name="username" id="input-username" />
+            </div>
+            <div id="password-box">
+              <input type="password" name="password" id="input-password" />
+            </div>
+          </form>
+
           <div id="remember-me-login-box">
             <div id="remember-me">
               <input
@@ -35,7 +42,7 @@
             </div>
             <input type="button" value="login" id="login-button" />
           </div>
-        </form>
+        </div>
       </div>
       <div class="outside">
         <div id="links">
