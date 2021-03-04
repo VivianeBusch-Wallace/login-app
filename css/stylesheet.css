@@ -65,10 +65,10 @@ button {
 
 /* divider */
 #or-divider {
-  color: lightgray;
-  border: lightgray 1px solid;
-  /* height: 50px;
-  width: 50px; */
+  color: blue;
+  border: blue 1px solid;
+  height: 50px;
+  width: 50px;
   border-radius: 30px;
   text-align: center;
 }
@@ -82,16 +82,30 @@ button {
 form {
   background-color: mediumspringgreen;
 }
-#remember-me-login-box {
-  background-color: mediumaquamarine;
+#sign-in-with,
+#username-box,
+#password-box {
+  margin: 1em;
+}
+#username-box,
+#password-box {
+  border-bottom: lightgray 1px solid;
 }
 
-/* underneath input of sign in*/
+/* underneath input of sign in form*/
+#remember-me-login-box {
+  background-color: mediumaquamarine;
+  display: flex;
+}
 #login-button {
   background-color: steelblue;
+  color: white;
+  border: none;
   border-radius: 3px;
   text-transform: uppercase;
   padding: 0.5em 1.3em;
+  /* float: right; */
+  /* align-self: flex-end; */
 }
 input[type="checkbox"] {
 }
