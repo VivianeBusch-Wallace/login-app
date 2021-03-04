@@ -49,9 +49,19 @@ button {
 }
 .social-media-buttons {
   height: 2rem;
-  width: 10rem;
+  width: 15rem;
   margin: 1em 3em;
   color: white;
+  display: flex;
+}
+.sline {
+  width: 1px;
+  height: 1em;
+  background-color: yellow;
+  align-self: center;
+}
+#social-media-container p {
+  display: block;
 }
 #facebook {
   background-color: rgb(77, 77, 245);
@@ -91,7 +101,7 @@ form {
   color: lightslategray;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 2em;
+  /* margin-bottom: 2em; */
 }
 #username-box,
 #password-box {
@@ -132,8 +142,13 @@ input[type="checkbox"] {
 /* why does this not work? */
 
 /* bottom part inside */
+#links {
+  /* align-items: center; */
+  text-align: center;
+}
 #links a {
+  border: limegreen 1px solid;
   color: rgb(0, 132, 255);
   text-decoration: none;
-  display: inline;
+  /* display: inline; */
 }
