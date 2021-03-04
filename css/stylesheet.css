@@ -3,7 +3,6 @@
 }
 /* general*/
 #body-container {
-  /* display: flexbox; */
   margin: 30vh 20vw;
 }
 fieldset {
@@ -12,28 +11,19 @@ fieldset {
 
 /* outer boxes */
 #main {
-  width: 50vw;
-  display: flex;
-  justify-content: center;
-  /* align-items: center; */
 }
 #social-media,
 #or,
 #sign-in {
   border: 1px green solid;
-  height: 10em;
-  display: inline-block;
 }
 #sign-in-options {
   background-color: rgb(228, 236, 247);
-  width: 50vw;
-  display: inline-flex;
-  justify-content: center;
 }
 
 /* social media links */
 #social-media {
-  width: 15rem;
+  width: auto;
   height: auto;
 }
 button {
@@ -42,43 +32,8 @@ button {
 }
 
 /* divider */
-#outside-or {
-  height: 200px;
-  /* background-color: blue; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-#or {
-  height: 3em;
-  width: 3em;
-  border: lightgray 1px solid;
-  border-radius: 50%;
-  z-index: 2;
-  color: lightgray;
-  text-align: center;
-  /* justify-content: center; */
-  /* align-items: center; */
-}
-
-#or::before {
-  height: 50px;
-  width: 5px;
-  border: blue 1px solid;
-}
 
 /* sign in form */
-#sign-in {
-  width: 15rem;
-  margin: 2rem;
-}
-#sign-in :nth-child(1) {
-  height: 1em;
-  width: 10em;
-  border: yellow solid 1px;
-  text-align: center;
-}
-/* why does this not work? */
 
 /* underneath input of sign in*/
 #login-button {
@@ -89,8 +44,6 @@ button {
 }
 
 input[type="checkbox"] {
-  border: red solid 1px;
-  border-radius: none;
 }
 /* why does this not work? */
 
@@ -113,13 +66,8 @@ input[type="checkbox"] {
 }
 
 /* bottom part inside */
-
-#sign-in-options a {
+#links a {
   color: rgb(0, 132, 255);
   text-decoration: none;
   display: inline;
-}
-#border {
-  border-left: lightgray solid 1px;
-  height: 1em;
 }

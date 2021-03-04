@@ -13,54 +13,36 @@
   </head>
   <body>
     <div id="body-container">
-      <fieldset id="main">
-        <div id="social-media">
-          <button type="button" class="social-media-buttons" id="facebook">
-            <i class="fab fa-facebook-f"></i>
-            <span>Facebook login</span>
-          </button>
-          <button type="button" class="social-media-buttons" id="google">
-            <i class="fab fa-google-plus-g"></i>
-            <span>Google+login</span>
-          </button>
-          <button type="button" class="social-media-buttons" id="twitter">
-            <i class="fab fa-twitter"></i>
-            <span>Twitter login</span>
-          </button>
+      <div class="outside">
+        <div id="social-media"></div>
+        <div id="or-divider"></div>
+        <form action="index.js" method="GET" id="sign-in">
+          <div id="sign-in-with">Sign in with</div>
+          <div id="username-box">
+            <input type="text" name="username" id="input-username" />
+          </div>
+          <div id="password-box">
+            <input type="password" name="password" id="input-password" />
+          </div>
+          <div id="remember-me-login-box">
+            <div id="remember-me">
+              <input
+                type="checkbox"
+                name="remember-me"
+                id="checkbox-remember-me"
+              />
+              <label for="checkbox">Remember me</label>
+            </div>
+            <input type="button" value="login" id="login-button" />
+          </div>
+        </form>
+      </div>
+      <div class="outside">
+        <div id="links">
+          <a href="#">Register now</a>
+          <a href="#">Forgotten?</a>
         </div>
-        <div id="outside-or">
-          <div id="or">OR</div>
-        </div>
-        <div id="sign-in">
-          <div>Sign in with</div>
-          <br />
-          <i class="fas fa-user"></i>
-          <input
-            type="text"
-            name="username-or-email"
-            id="username-or-email"
-            placeholder="&#9760 Username or email"
-          />
-          <br />
-          <br />
-          <i class="fas fa-unlock-alt"></i>
-          <input
-            type="text"
-            name="password"
-            id="password"
-            placeholder="&#42 Password"
-          />
-          <br />
-          <input type="checkbox" name="remember-me" id="remember-me" />
-          <label for="checkbox">Remember me</label>
-          <button id="login-button">Login</button>
-        </div>
-      </fieldset>
-      <fieldset id="sign-in-options">
-        <a href="#">Register now</a>
-        <div id="border"></div>
-        <a href="#">Forgotten?</a>
-      </fieldset>
+      </div>
     </div>
   </body>
 </html>
