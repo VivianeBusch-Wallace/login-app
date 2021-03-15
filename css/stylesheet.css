@@ -5,6 +5,13 @@
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 /* general*/
+body {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 100vh; */
+  background-color: rgb(83, 131, 131);
+}
 div {
   border: 1px lightblue solid;
 }
@@ -17,7 +24,8 @@ div {
   grid-template-rows: repeat(5, 1fr) 1fr;
   gap: 1rem;
   border: darkgoldenrod solid 3px;
-  max-width: 70vw;
+  max-width: 40vw;
+  height: 30vh;
 }
 
 /* big box (= upper box of outer boxes) */
