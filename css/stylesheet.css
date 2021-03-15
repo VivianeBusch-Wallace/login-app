@@ -47,14 +47,25 @@ button {
 .or-divider {
   grid-area: or-divider;
   /* background-color: darkorange; */
+  /* display: flex;
+  flex-direction: column; */
+  position: relative;
 }
 .or-divider::before {
-  content: "where are you";
-  height: 400px;
-  width: 30px;
+  content: "";
+  height: 70px;
+  width: 10px;
   background-color: tomato;
+  /* position: absolute; */
   display: block;
-  z-index: 3;
+}
+.or-divider::after {
+  content: "";
+  height: 70px;
+  width: 10px;
+  background-color: yellow;
+  position: absolute;
+  display: block;
 }
 
 /* sign in form (right side of big box) */
