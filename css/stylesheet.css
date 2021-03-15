@@ -6,10 +6,11 @@
 }
 /* general*/
 div {
-  border: 1px blue solid;
+  border: 1px lightblue solid;
 }
 /* outer boxes and inner boxes shared properties */
-.login-container {
+.login-container,
+.big-box {
   display: grid;
 }
 .login-container {
@@ -18,11 +19,12 @@ div {
   border: darkgoldenrod solid 3px;
 }
 
+/* big box (= upper box of outer boxes) */
 .big-box {
   border: darkgreen 2px solid;
 }
 
-/* inner boxes */
+/* inner boxes of big box */
 
 /* social media buttons */
 .social-media-buttons {
@@ -30,6 +32,12 @@ div {
   width: 15rem;
   margin: 1em 3em;
   color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-buttons div {
+  display: inline-block;
 }
 .facebook {
   background-color: rgb(77, 77, 245);
