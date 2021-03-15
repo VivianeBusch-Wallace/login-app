@@ -17,3 +17,12 @@ div {
   gap: 1rem;
   border: darkgoldenrod solid 3px;
 }
+
+.big-box {
+  border: darkgreen 2px solid;
+}
+
+/* inner boxes */
+
+.social-media-buttons {
+}
