@@ -22,6 +22,7 @@ div {
 /* big box (= upper box of outer boxes) */
 .big-box {
   border: darkgreen 2px solid;
+  grid-template-columns: repeat(5, 1fr) 1fr repeat(5, 1fr);
 }
 
 /* inner boxes of big box */
