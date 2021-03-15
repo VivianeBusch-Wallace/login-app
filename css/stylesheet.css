@@ -75,15 +75,19 @@ div {
 
 /* bottom box */
 .bottom-box {
-  text-align: center;
   font-weight: bold;
+  display: flex;
+  justify-content: center;
 }
 .sline {
-  height: 2rem;
-  width: 1rem;
-  background-color: red;
+  height: 1em;
+  width: 3px;
+  background-color: yellow;
   border: none;
+  margin: 0 0.5em;
+  z-index: 2;
 }
+
 .bottom-box a {
   border: limegreen 1px solid;
   color: rgb(0, 132, 255);
