@@ -26,6 +26,10 @@ div {
 
 /* social media buttons */
 .social-media-buttons {
+  height: 2rem;
+  width: 15rem;
+  margin: 1em 3em;
+  color: white;
 }
 .facebook {
   background-color: rgb(77, 77, 245);
