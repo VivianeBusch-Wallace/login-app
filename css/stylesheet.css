@@ -121,6 +121,22 @@ button {
   /* grid-area: sign-in-form; */
   padding: 1em 2em;
 }
+.remember-me-login-box,
+.remember-me {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.login-button {
+  background-color: steelblue;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  padding: 0.5em 1.3em;
+  margin-left: 1em;
+}
 
 /* bottom box */
 .bottom-box {
