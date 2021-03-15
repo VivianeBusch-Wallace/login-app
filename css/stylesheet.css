@@ -3,49 +3,28 @@
 }
 /* general*/
 #body-container {
-  margin: 30vh auto;
   border: lightgray 1px solid;
-  height: auto;
-  width: 50vw;
 }
 #big-box {
   background-color: rgb(220, 235, 245);
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-
 button {
   color: white;
   border: none;
 }
 
 /* outer boxes */
-/* #big-box {
-
-} */
-
 #social-media-container,
 #sign-in-container {
-  border: 1px green solid;
-  /* width: 300px;
-  height: 250px; */
 }
 #bottom-box {
-  border: lightgray 1px solid;
-  /* display: flex;
-  align-items: center; */
 }
 
 /* social media links */
 /* social media buttons */
 #social-media-container {
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
 }
 .social-media-buttons {
   height: 2rem;
@@ -75,19 +54,12 @@ button {
 
 /* divider */
 #or-divider {
-  color: blue;
-  border: blue 1px solid;
-  height: 50px;
-  width: 50px;
-  border-radius: 30px;
-  text-align: center;
+}
+#or-divider::before {
 }
 
 /* sign in form part*/
 #sign-in-container {
-  height: auto;
-  width: 30%;
-  padding: 2em;
 }
 form {
   background-color: mediumspringgreen;
@@ -95,13 +67,11 @@ form {
 #sign-in-with,
 #username-box,
 #password-box {
-  margin: 8%;
 }
 #sign-in-with {
   color: lightslategray;
   text-align: center;
   font-weight: bold;
-  /* margin-bottom: 2em; */
 }
 #username-box,
 #password-box {
@@ -120,8 +90,6 @@ input[type="password"] {
 
 /* underneath input of sign in form*/
 #remember-me-login-box {
-  background-color: mediumaquamarine;
-  display: flex;
 }
 label {
   color: lightslategray;
@@ -133,22 +101,14 @@ label {
   border-radius: 3px;
   text-transform: uppercase;
   padding: 0.5em 1.3em;
-  /* float: right; */
-  /* align-self: flex-end; */
 }
-input[type="checkbox"] {
-  border: lime solid 1px;
-}
-/* why does this not work? */
 
 /* bottom part inside */
 #links {
-  /* align-items: center; */
   text-align: center;
 }
 #links a {
   border: limegreen 1px solid;
   color: rgb(0, 132, 255);
   text-decoration: none;
-  /* display: inline; */
 }
