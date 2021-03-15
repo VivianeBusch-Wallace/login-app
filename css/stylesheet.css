@@ -8,12 +8,12 @@
 body {
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* height: 100vh; */
+  align-items: center;
   background-color: rgb(83, 131, 131);
+  height: 100vh;
 }
 div {
-  border: 1px lightblue solid;
+  border: 1px rgb(53, 201, 250) solid;
 }
 /* outer boxes and inner boxes shared properties */
 .login-container,
