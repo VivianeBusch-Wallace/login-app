@@ -17,12 +17,27 @@ div {
   grid-template-rows: repeat(5, 1fr) 1fr;
   gap: 1rem;
   border: darkgoldenrod solid 3px;
+  max-width: 70vw;
 }
 
 /* big box (= upper box of outer boxes) */
 .big-box {
   border: darkgreen 2px solid;
-  grid-template-columns: repeat(5, 1fr) 1fr repeat(5, 1fr);
+  grid-template-columns: 17fr 1fr 17fr;
+  grid-template-areas: "sm-container or-divider sign-in-form";
+}
+
+.social-media-container {
+  grid-area: sm-container;
+  background-color: darkgrey;
+}
+.or-divider {
+  grid-area: or-divider;
+  background-color: darkorange;
+}
+.sign-in-container {
+  grid-area: sign-in-form;
+  background-color: darkseagreen;
 }
 
 /* inner boxes of big box */
