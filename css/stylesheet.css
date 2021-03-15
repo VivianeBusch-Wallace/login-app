@@ -121,21 +121,52 @@ button {
   /* grid-area: sign-in-form; */
   padding: 1em 2em;
 }
+/* #sign-in-with,
+#username-box,
+#password-box {
+  margin: 8%;
+} */
+.sign-in-with {
+  color: lightslategray;
+  text-align: center;
+  font-weight: bold;
+  /* margin-bottom: 2em; */
+}
+.username-box,
+.password-box {
+  border-bottom: lightgray 1px solid;
+}
+form i {
+  color: lightslategray;
+}
+input[type="text"],
+input[type="password"] {
+  font-weight: bold;
+  border: none;
+  padding-left: 1em;
+  width: 86%;
+}
+
+/* part underneath sign-in form */
 .remember-me-login-box,
 .remember-me {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-
+.remember-me label {
+  color: darkslategray;
+}
 .login-button {
   background-color: steelblue;
   color: white;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
-  padding: 0.5em 1.3em;
+  padding: 0 1em;
   margin-left: 1em;
+  width: 7rem;
+  height: 2rem;
 }
 
 /* bottom box */
