@@ -35,6 +35,9 @@ button {
 /* container of entire app */
 .login-container {
   grid-template-rows: 4fr 1fr;
+  /* grid-template-areas:
+    "big-box"
+    "bottom-box"; */
   gap: 1rem;
   border: darkgoldenrod solid 3px;
   width: 40vw;
@@ -44,19 +47,22 @@ button {
 /* big box (= upper box of outer boxes) */
 .big-box {
   border: darkgreen 2px solid;
+  /* grid-area: big-box; */
   grid-template-columns: 17fr 1fr 17fr;
   grid-template-areas: "sm-container or-divider sign-in-form";
+  height: 100%;
 }
 /* boxes inside big box */
 /* social media part (left side of big box) */
 .social-media-container {
   grid-area: sm-container;
+  /* height: 40vh; */
 }
 /* social media buttons */
 .social-media-buttons {
   height: 2rem;
   width: 15rem;
-  margin: 1em 3em;
+  margin: 1em 2em;
   color: white;
   display: flex;
   justify-content: center;
@@ -108,15 +114,17 @@ button {
 
 /* sign in form (right side of big box) */
 .sign-in-container {
-  grid-area: sign-in-form;
   background-color: darkseagreen;
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: ;
+  /* grid-template-rows: repeat(4, 1fr); */
+  /* grid-template-areas: ; */
+  /* grid-area: sign-in-form; */
+  padding: 1em 2em;
 }
 
 /* bottom box */
 .bottom-box {
+  /* grid-area: bottom-box; */
   font-weight: bold;
   display: flex;
   justify-content: center;
