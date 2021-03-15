@@ -35,7 +35,10 @@ button {
 .big-box {
   border: darkgreen 2px solid;
   grid-template-columns: 17fr 1fr 17fr;
+  /* grid-template-rows: 2fr 1fr 2fr; */
   grid-template-areas: "sm-container or-divider sign-in-form";
+  /* "sm-container or-divider sign-in-form"
+    "sm-container none sign-in-form"; */
 }
 /* social media part (left side of big box) */
 .social-media-container {
@@ -52,24 +55,28 @@ button {
   justify-content: center;
   align-items: center;
   position: relative;
+  border: black 2px solid;
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 50%;
 }
 .or-divider::before {
   content: "";
-  height: 70px;
+  height: 5vh;
   width: 10px;
   background-color: tomato;
   position: absolute;
   display: block;
-  bottom: 80px;
+  top: 90%;
 }
 .or-divider::after {
   content: "";
-  height: 70px;
+  height: 5vh;
   width: 10px;
   background-color: yellow;
   position: absolute;
   display: block;
-  top: 80px;
+  bottom: 90%;
 }
 
 /* sign in form (right side of big box) */
