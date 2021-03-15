@@ -9,14 +9,22 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(211, 247, 247);
   height: 100vh;
 }
 div {
   border: 1px rgb(53, 201, 250) solid;
 }
+/* properties of all buttons */
 button {
   border: none;
+}
+/* social media button and register links divider */
+.sline {
+  height: 1em;
+  width: 0.1rem;
+  background-color: gray;
+  border: none;
+  margin: 0 0.5em;
 }
 /* outer boxes and inner boxes shared properties */
 .login-container,
@@ -26,7 +34,7 @@ button {
 
 /* container of entire app */
 .login-container {
-  grid-template-rows: repeat(5, 1fr) 1fr;
+  grid-template-rows: 4fr 1fr;
   gap: 1rem;
   border: darkgoldenrod solid 3px;
   width: 40vw;
@@ -39,13 +47,35 @@ button {
   grid-template-columns: 17fr 1fr 17fr;
   grid-template-areas: "sm-container or-divider sign-in-form";
 }
+/* boxes inside big box */
 /* social media part (left side of big box) */
 .social-media-container {
   grid-area: sm-container;
-  background-color: darkgrey;
+}
+/* social media buttons */
+.social-media-buttons {
+  height: 2rem;
+  width: 15rem;
+  margin: 1em 3em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social-media-buttons div {
+  display: inline-block;
+}
+.facebook {
+  background-color: rgb(77, 77, 245);
+}
+.google {
+  background-color: rgb(255, 0, 64);
+}
+.twitter {
+  background-color: rgb(0, 234, 255);
 }
 
-/* or divider inside big box */
+/* or divider (middle part inside big box) */
 .or-divider {
   grid-area: or-divider;
   /* background-color: darkorange; */
@@ -80,31 +110,9 @@ button {
 .sign-in-container {
   grid-area: sign-in-form;
   background-color: darkseagreen;
-}
-
-/* inner boxes of big box */
-
-/* social media buttons */
-.social-media-buttons {
-  height: 2rem;
-  width: 15rem;
-  margin: 1em 3em;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.social-media-buttons div {
-  display: inline-block;
-}
-.facebook {
-  background-color: rgb(77, 77, 245);
-}
-.google {
-  background-color: rgb(255, 0, 64);
-}
-.twitter {
-  background-color: rgb(0, 234, 255);
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas: ;
 }
 
 /* bottom box */
@@ -113,14 +121,7 @@ button {
   display: flex;
   justify-content: center;
 }
-/* divider in bottom box */
-.sline {
-  height: 1em;
-  width: 3px;
-  background-color: yellow;
-  border: none;
-  margin: 0 0.5em;
-}
+/* divider in bottom box see above in general*/
 /* links in bottom box */
 .bottom-box a {
   color: rgb(0, 132, 255);
