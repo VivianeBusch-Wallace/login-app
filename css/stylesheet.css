@@ -15,6 +15,9 @@ body {
 div {
   border: 1px rgb(53, 201, 250) solid;
 }
+button {
+  border: none;
+}
 /* outer boxes and inner boxes shared properties */
 .login-container,
 .big-box {
@@ -79,6 +82,7 @@ div {
   display: flex;
   justify-content: center;
 }
+/* divider in bottom box */
 .sline {
   height: 1em;
   width: 3px;
@@ -87,9 +91,8 @@ div {
   margin: 0 0.5em;
   z-index: 2;
 }
-
+/* links in bottom box */
 .bottom-box a {
-  border: limegreen 1px solid;
   color: rgb(0, 132, 255);
   text-decoration: none;
 }
