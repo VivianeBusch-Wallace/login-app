@@ -24,5 +24,15 @@ div {
 
 /* inner boxes */
 
+/* social media buttons */
 .social-media-buttons {
+}
+.facebook {
+  background-color: rgb(77, 77, 245);
+}
+.google {
+  background-color: rgb(255, 0, 64);
+}
+.twitter {
+  background-color: rgb(0, 234, 255);
 }
