@@ -9,7 +9,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(83, 131, 131);
+  background-color: rgb(211, 247, 247);
   height: 100vh;
 }
 div {
@@ -71,4 +71,21 @@ div {
 }
 .twitter {
   background-color: rgb(0, 234, 255);
+}
+
+/* bottom box */
+.bottom-box {
+  text-align: center;
+  font-weight: bold;
+}
+.sline {
+  height: 2rem;
+  width: 1rem;
+  background-color: red;
+  border: none;
+}
+.bottom-box a {
+  border: limegreen 1px solid;
+  color: rgb(0, 132, 255);
+  text-decoration: none;
 }
