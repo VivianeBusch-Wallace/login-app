@@ -27,7 +27,7 @@ button {
   grid-template-rows: repeat(5, 1fr) 1fr;
   gap: 1rem;
   border: darkgoldenrod solid 3px;
-  max-width: 40vw;
+  width: 40vw;
   height: 30vh;
 }
 
@@ -37,15 +37,27 @@ button {
   grid-template-columns: 17fr 1fr 17fr;
   grid-template-areas: "sm-container or-divider sign-in-form";
 }
-
+/* social media part (left side of big box) */
 .social-media-container {
   grid-area: sm-container;
   background-color: darkgrey;
 }
+
+/* or divider inside big box */
 .or-divider {
   grid-area: or-divider;
-  background-color: darkorange;
+  /* background-color: darkorange; */
 }
+.or-divider::before {
+  content: "where are you";
+  height: 400px;
+  width: 30px;
+  background-color: tomato;
+  display: block;
+  z-index: 3;
+}
+
+/* sign in form (right side of big box) */
 .sign-in-container {
   grid-area: sign-in-form;
   background-color: darkseagreen;
@@ -89,7 +101,6 @@ button {
   background-color: yellow;
   border: none;
   margin: 0 0.5em;
-  z-index: 2;
 }
 /* links in bottom box */
 .bottom-box a {
