@@ -8,3 +8,12 @@
 div {
   border: 1px blue solid;
 }
+/* outer boxes and inner boxes shared properties */
+.login-container {
+  display: grid;
+}
+.login-container {
+  grid-template-rows: repeat(5, 1fr) 1fr;
+  gap: 1rem;
+  border: darkgoldenrod solid 3px;
+}
