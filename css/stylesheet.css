@@ -67,7 +67,7 @@ button {
   background-color: tomato;
   position: absolute;
   display: block;
-  top: 90%;
+  top: 105%;
 }
 .or-divider::after {
   content: "";
@@ -76,7 +76,7 @@ button {
   background-color: yellow;
   position: absolute;
   display: block;
-  bottom: 90%;
+  bottom: 105%;
 }
 
 /* sign in form (right side of big box) */
