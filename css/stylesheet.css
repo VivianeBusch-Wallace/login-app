@@ -35,10 +35,7 @@ button {
 /* container of entire app */
 .login-container {
   grid-template-rows: 4fr 1fr;
-  /* grid-template-areas:
-    "big-box"
-    "bottom-box"; */
-  gap: 1rem;
+  gap: 0.2rem;
   border: darkgoldenrod solid 3px;
   width: 40vw;
   height: 30vh;
@@ -56,7 +53,10 @@ button {
 /* social media part (left side of big box) */
 .social-media-container {
   grid-area: sm-container;
-  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 /* social media buttons */
 .social-media-buttons {
@@ -114,67 +114,78 @@ button {
 
 /* sign in form (right side of big box) */
 .sign-in-container {
-  background-color: darkseagreen;
+  background-color: rgb(192, 221, 192);
   display: grid;
-  /* grid-template-rows: repeat(4, 1fr); */
-  /* grid-template-areas: ; */
-  /* grid-area: sign-in-form; */
   padding: 1em 2em;
 }
-/* #sign-in-with,
-#username-box,
-#password-box {
-  margin: 8%;
-} */
+.sign-in-with,
+.username-box,
+.password-box,
+.remember-me-login-box {
+  margin: 5%;
+}
 .sign-in-with {
-  color: lightslategray;
+  color: darkslategray;
   text-align: center;
   font-weight: bold;
-  /* margin-bottom: 2em; */
 }
 .username-box,
 .password-box {
   border-bottom: lightgray 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+/* icons inside form */
 form i {
   color: lightslategray;
 }
+/* input fields of form */
 input[type="text"],
 input[type="password"] {
   font-weight: bold;
   border: none;
   padding-left: 1em;
-  width: 86%;
+  height: 2rem;
+  width: 94%;
 }
-
 /* part underneath sign-in form */
+/* checkbox of remember me */
 .remember-me-login-box,
 .remember-me {
   display: flex;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+}
+.remember-me,
+.login-button {
+  height: 2.2rem;
 }
 .remember-me label {
   color: darkslategray;
+  margin-left: 0.5rem;
 }
+/* login button */
 .login-button {
   background-color: steelblue;
   color: white;
   border: none;
   border-radius: 3px;
   text-transform: uppercase;
+  font-size: larger;
+  font-weight: bold;
   padding: 0 1em;
   margin-left: 1em;
-  width: 7rem;
-  height: 2rem;
+  width: 6rem;
 }
 
 /* bottom box */
 .bottom-box {
-  /* grid-area: bottom-box; */
   font-weight: bold;
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 2rem;
 }
 /* divider in bottom box see above in general*/
 /* links in bottom box */
